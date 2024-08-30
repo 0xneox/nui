@@ -1,0 +1,673 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* leaderboard starts  */
+.leaderboard, .home, .checkIn, .invite, .Achievement, .Quest, .Profile{
+  /* background: linear-gradient(200deg, #025995 0%, #000026 25%, #000026 50%, #000026 100%); */
+  background: url('./Images/background_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 80px;
+}
+.leader-h1{
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size:50px;
+  margin-top:30px;
+}
+.leader-p{
+  color:white;
+  text-align: center;
+  width:80%;
+  margin-right:auto;
+  margin-left:auto;
+  font-size:18px;
+}
+.bold{
+  font-weight: 800;
+}
+.trophy-img{
+  height:80%;
+  width:80%;
+  position: relative;
+  bottom:50px;
+}
+.leaderboard-banner{
+  background: url(./Images/star.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leaderboard-timer{
+  margin-top:30px;
+}
+.timer-h1{
+  font-size: 40px;
+  line-height:0.3;
+}
+.user-img{
+  height:110px;
+  width:90px;
+}
+.first-rank{
+  height:135px;
+  width:110px;
+}
+.username{
+  font-size:20px;
+  font-weight: 800;
+}
+.bottom-user{
+ padding-top:80px;
+}
+.leader-row{
+  padding-top:40px;
+}
+.coin-icon{
+  height:20px;
+  width:20px;
+}
+.table-coin{
+  height:15px;
+  width:15px;
+}
+.light{
+  height:100%;
+  width:100%;
+}
+.table-user{
+  height:30px;
+  width:30px;
+}
+
+.table {
+  background-color: transparent !important;
+  margin-top:40px;
+}
+
+.table th,
+.table td {
+  background-color: transparent !important;
+  color:white !important;
+}
+
+.menuContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, #071665, #071665, #0348B2, #0870DE); /* Gradient background */
+  padding: 25px 0;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.icon {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5); /* Light color for inactive icons */
+}
+
+.icon.active {
+  color: #fff; /* Color for the active icon */
+}
+
+/* home page  */
+.logo{
+  height: 25%;
+  width:25%;
+  margin-bottom:20px;
+}
+.home_user{
+  height:60px;
+  width:60px;
+}
+.user-name{
+  color:white;
+  font-weight:700;
+  font-size:20px;
+  margin-top:5px;
+}
+
+/* .home_second_section{
+  background: url(./Images/home_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+.earn-btn{
+  padding:15px 100px;
+  border-radius: 40px;
+  position: relative;
+  bottom:24px;
+}
+.home{
+  text-align:left;
+  padding-bottom:110px;
+}
+.home-p{
+  color:gray;
+  font-size:20px;
+}
+.home-h1{
+  font-size:50px;
+  font-weight:700;
+  color:white;
+  line-height:0.2;
+}
+.home-bg{
+  margin-top:80px;
+}
+.point{
+  padding:10px 40px;
+  background-color: red;
+}
+.coin-home-img{
+  height:20px;
+  width:20px;
+}
+.xp-col-1{
+  padding-left:10px;
+}
+.xp-row{
+  padding-top:20px;
+}
+.level{
+  line-height: 0.4;
+  position: relative;
+  left:2px;
+}
+.referral-info {
+  display: flex;
+  align-items: center;
+}
+
+.referrals {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.settings-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+.referral-right{
+  text-align: right;
+}
+
+/* checkIn page  */
+.checkIn{
+  text-align: left;
+}
+.checkin-cnt{
+  text-align: center;
+  position: relative;
+  bottom:100px;
+}
+.fan-row{
+  padding-top:50px;
+}
+.fan{
+  text-align: center;
+  height:100%;
+  width:100%;
+  position: relative;
+  bottom:80px;
+}
+.fan-h1{
+  font-size:50px;
+  font-weight:300;
+  text-align: center;
+  margin-top:0px;
+  position: relative;
+  bottom:120px;
+}
+.neurolovCoin{
+  height:100%;
+  width:100%;
+}
+.reward-section {
+  background-color: #0A0E27; /* Dark background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border with transparency */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  margin:0 auto;
+  position: relative;
+  bottom:140px;
+  width:100%;
+}
+
+.coin-icon {
+  width: 100%; /* Responsive coin image */
+  height: 100%;
+}
+
+.xp-text {
+  font-size: 70px;
+  color: white;
+  margin: 0;
+  font-weight:700;
+}
+
+.btn-claim {
+  background: linear-gradient(90deg, #4a90e2, #0a74da); /* Gradient button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btn-claim:hover {
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.7); /* Button hover effect */
+}
+
+.text-right{
+  text-align: center;
+  position:relative;
+  top:60px;
+}
+
+/* invite page  */
+.invite {
+  text-align: left;
+}
+.invite-img{
+  height:100%;
+  width:100%;
+  position: relative;
+  bottom:40px;
+}
+.invite-h1{
+  font-size:50px;
+  font-weight:400;
+  text-align: center;
+  margin-top:0px;
+  position: relative;
+  bottom:70px;
+}
+.invite-section{
+  background-color: #0A0E27; /* Dark background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light border with transparency */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  margin:0 auto;
+  width:100%;
+}
+.coin-name{
+  font-weight:800;
+  font-size:24px;
+  padding-top:10px;
+}
+.invite-coin-icon{
+  height:50px;
+  width:50px;
+}
+.invite-row{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.invite-cnt{
+  position:relative;
+  bottom:0px;
+}
+.invite-p{
+  text-align: center;
+  color: gray;
+  font-size:20px;
+}
+.invite-button {
+  background-color: #1a1a1a; /* Dark background color */
+  color: white; /* White text */
+  padding: 15px 90px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle light border */
+  border-radius: 30px; /* Fully rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  margin-bottom:50px;
+}
+
+.invite-button:hover {
+  background-color: #333; /* Slightly lighter on hover */
+  border-color: rgba(255, 255, 255, 0.4); /* Slightly more visible border on hover */
+}
+
+.invite-button:active {
+  transform: scale(0.95); /* Slight scaling on click */
+}
+.copy-button{
+  background:linear-gradient(to bottom right, #17e6eb 0%, #1160d9 100%);
+  padding:13px 30px;
+  border-radius:40px;
+  color:white;
+  text-decoration: none;
+  border:none;
+}
+.earn-button{
+  color:black;
+  background: white;
+  border-radius: 40px;
+  text-decoration: none;
+  padding: 13px 30px;
+  margin-left:10px;
+  border:none;
+}
+.button-cnt{
+  text-align: center;
+  margin: 0 auto;
+  position:relative;
+  bottom:50px;
+}
+.copy-icon{
+  color:white;
+  font-size:18px;
+}
+.xp-h1{
+  font-weight:800;
+  font-size:24px;
+  position: relative;
+  top:10px;
+  padding-left:10px;
+  background: linear-gradient(90deg, #3660e4, #50d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Achievement PAGE STARTS  */
+.Achievement{
+  text-align: left;
+}
+.quest-btn{
+  background-color: #121d38;
+  color: #FFFFFF;
+  padding: 12px 58px;
+  border-radius: 40px;        
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  font-size: 18px;      
+  font-weight: 500;          
+  cursor: pointer;          
+  outline: none;            
+  display: inline-block;    
+  background-image: linear-gradient(145deg, #274C89, #1a355d);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition:all 0.3s ease;
+}
+.achievement-cnt{
+  text-align: center;
+  position: relative;
+  bottom:140px;
+}
+.quest-h1{
+  font-weight:300;
+  position:relative;
+  bottom:0px;
+  top:40px;
+  font-size:80px;
+}
+
+.quest-page {
+  padding: 20px;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  font-size: 18px;
+}
+
+.arrow-down {
+  margin-left: 8px;
+}
+
+.xp-earned {
+  background-color: #3660E4;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #3B4AFF;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: black;
+  color: white;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.check-in {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.count {
+  font-size: 16px;
+  color: #B0B0B0;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.reward-card {
+  background-color: #1B2959;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+}
+
+.xp {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.collect-btn {
+  background-color: #3660E4;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collect-btn:hover {
+  background-color: #274C89;
+}
+.down-arw{
+  color:white;
+  font-size:20px;
+  font-weight:300;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.reward-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  border-radius: 15px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+  backdrop-filter: blur(10px); /* Optional: adds a subtle blur effect */
+}
+
+.xp {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #FFFFFF; /* White text */
+}
+
+.collect-btn {
+  background-color: #3660E4;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collect-btn:hover {
+  background-color: #274C89;
+}
+.count{
+  position: relative;
+  bottom:8px;
+}
+.collect-btn{
+  padding:10px 50px;
+}
+.content-h1{
+  font-size:40px;
+  font-weight:500;
+}
+.content-p{
+  color:gray;
+  line-height:0.4;
+  position: relative;
+  left:5px;
+  margin-bottom:30px;
+}
+.achievement-col{
+  background: linear-gradient(to bottom right, #121649, #131D59); /* Light transparent background */
+  border-radius: 15px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border with transparency */
+  backdrop-filter: blur(10px); /* Optional: adds a subtle blur effect */
+  padding-top:10px;
+  padding-bottom:20px;
+  margin-bottom:10px;
+}
+.acol-1{
+  position: relative;
+  right:5px;
+}
+.acol-2{
+  position: relative;
+  left:5px;
+}
+
+/* quest page  */
+.Quest{
+  text-align:left;
+}
+.quest-mypage{
+  position:relative;
+  bottom:120px;
+}
+.quest-cnt{
+  position: relative;
+  bottom:90px;
+}
+.quest-ic{
+  height:50px;
+  width:50px;
+  position: relative;
+  top:14px;
+}
+.follow{
+  font-weight:500;
+  font-size:20px;
+}
+.twitter-acc{
+  font-size:14px;
+}
+.lock-icon{
+  color:black;
+  font-size:14px;
+  position: relative;
+  bottom:3px;
+}
+
+/* settings page starts here  */
+.Settings{
+  text-align: left;
+  background: url('./Images/settings_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 100vh;
+  color: white;
+  padding-top:60px;
+  padding-bottom: 80px;
+}
+
+/* Profile page  */
+.Profile{
+  text-align: left;
+}
