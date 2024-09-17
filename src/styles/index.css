@@ -1,0 +1,207 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Neue Haas Grotesk Display Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Common page styles */
+.leaderboard, .home, .checkIn, .invite, .Achievement, .Quest, .Profile {
+  background: url('../Images/bg_pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--white);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+/* Typography */
+.leader-h1 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.leader-p {
+  color: var(--white);
+  text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+/* Images and icons */
+.trophy-img {
+  height: 80%;
+  width: 80%;
+  position: relative;
+  bottom: 50px;
+}
+
+.user-img {
+  height: 110px;
+  width: 90px;
+}
+
+.first-rank {
+  height: 135px;
+  width: 110px;
+}
+
+.coin-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.table-coin {
+  height: 15px;
+  width: 15px;
+}
+
+.table-user {
+  height: 30px;
+  width: 30px;
+}
+
+/* Menu styles */
+.menuContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+  padding: 25px 0;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.icon {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon.active {
+  color: var(--secondary-color);
+}
+
+/* Button styles */
+.btn-primary, .earn-btn, .copy-button {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .earn-btn:hover, .copy-button:hover {
+  opacity: 0.9;
+}
+
+/* Table styles */
+.table {
+  background-color: transparent !important;
+  margin-top: 40px;
+}
+
+.table th,
+.table td {
+  background-color: transparent !important;
+  color: var(--white) !important;
+}
+
+/* Card styles */
+.reward-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Specific page styles */
+/* Home page */
+.home {
+  text-align: left;
+}
+
+.home-h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+/* Achievement page */
+.quest-btn {
+  background-image: linear-gradient(145deg, var(--gradient-middle), var(--gradient-start));
+  color: var(--white);
+  padding: 12px 58px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Settings page */
+.Settings {
+  text-align: left;
+  background: url('../Images/bg_pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--white);
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
