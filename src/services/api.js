@@ -3,7 +3,8 @@ import config from '../utils/config';
 import { verifyTelegramWebAppData, getTelegramInitData } from '../utils/telegramUtils';
 
 
-const API_BASE_URL = config.API_BASE_URL;
+
+const API_BASE_URL = config.API_BASE_URL 
 const AUTH_BASE_URL = config.AUTH_BASE_URL;
 
 const api = axios.create({
@@ -21,7 +22,6 @@ api.interceptors.request.use((config) => {
   }
   return config;
 }, (error) => {
-  console.error('API Request Error:', error);
   return Promise.reject(error);
 });
 
@@ -31,20 +31,17 @@ api.interceptors.response.use((response) => {
 }, (error) => {
   console.error('API Response Error:', error.response || error);
   if (error.response && error.response.status === 401) {
-    // Handle unauthorized access (e.g., redirect to login)
-    // You might want to implement a logout function here
+    localStorage.removeItem('token');
+      window.location.href = '/';
+    
   }
   return Promise.reject(error);
 });
 
 // Authentication
-export const initializeTelegramAuth = async (userData, initData) => {
+export const authenticateTelegram = async (initData) => {
   try {
-    const response = await axios.post(`${AUTH_BASE_URL}/telegram`, userData, {
-      headers: {
-        'Telegram-Data': initData
-      }
-    });
+    const response = await api.post('/auth/telegram', initData);
     return response.data;
   } catch (error) {
     console.error('Telegram Auth Error:', error);
