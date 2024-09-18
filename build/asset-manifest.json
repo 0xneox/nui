@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46961403.css",
+    "main.js": "/static/js/main.d8f5d3da.js",
+    "static/js/724.7d9f5dee.chunk.js": "/static/js/724.7d9f5dee.chunk.js",
+    "static/media/fan_2.svg": "/static/media/fan_2.bb83e407ab92b891d653a7fd239cf5a9.svg",
+    "static/media/fan.svg": "/static/media/fan.102207f01dbe68278b9c21aa134ede42.svg",
+    "static/media/fan_3.svg": "/static/media/fan_3.c5f4006ddccc7c46cbff9eec9d2b90a2.svg",
+    "static/media/welcome.mp4": "/static/media/welcome.448302ecd850e2482b3c.mp4",
+    "static/media/settings_bg.png": "/static/media/settings_bg.15f32c21feda79e201fb.png",
+    "static/media/logo1.png": "/static/media/logo1.6708ad68fc8bcd8770a0.png",
+    "static/media/background_image.png": "/static/media/background_image.44c2af1e36706d574c25.png",
+    "static/media/bird.png": "/static/media/bird.37f2662d7eaf948311cc.png",
+    "static/media/breath_1.svg": "/static/media/breath_1.424d4904bbdc525c2ea9b5d18c2584a8.svg",
+    "static/media/trophy.png": "/static/media/trophy.35f3aaa009dd62e4af8d.png",
+    "static/media/sam.webp": "/static/media/sam.d0ce2880254a8c7adb35.webp",
+    "static/media/discord.svg": "/static/media/discord.875eabe7e55d76be114a2b3ff32364f4.svg",
+    "static/media/telegram.svg": "/static/media/telegram.85a41369aafc994936716649b85345c7.svg",
+    "static/media/twitter.svg": "/static/media/twitter.01f783930e60ca1828fff09040ee90f1.svg",
+    "index.html": "/index.html",
+    "main.46961403.css.map": "/static/css/main.46961403.css.map",
+    "main.d8f5d3da.js.map": "/static/js/main.d8f5d3da.js.map",
+    "724.7d9f5dee.chunk.js.map": "/static/js/724.7d9f5dee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46961403.css",
+    "static/js/main.d8f5d3da.js"
+  ]
+}
