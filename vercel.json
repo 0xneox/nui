@@ -2,14 +2,23 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.js",
+      "src": "app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/index.js" 
+      "dest": "app.js"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "MONGODB_URI": "@mongodb-uri",
+    "JWT_SECRET": "@jwt-secret",
+    "TELEGRAM_BOT_TOKEN": "@telegram-bot-token",
+    "CORS_ORIGIN": "@cors-origin",
+    "SERVER_URL": "@server-url",
+    "WEB_APP_URL": "@web-app-url"
+  }
 }
